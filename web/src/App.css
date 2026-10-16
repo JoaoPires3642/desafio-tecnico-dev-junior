@@ -1,0 +1,151 @@
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.app__header p {
+  margin: 0;
+  color: #4b5563;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.field label,
+.field legend {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.field label[for],
+.field legend {
+  padding: 0;
+}
+
+.days {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.days .day {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 400;
+  font-size: 0.95rem;
+  margin: 0.25rem 0.75rem 0 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.status {
+  margin: 0;
+  color: #4b5563;
+}
+
+.empty {
+  margin: 0;
+  color: #6b7280;
+}
+
+.teacher-list,
+.ineligible-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.teacher,
+.ineligible {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.75rem;
+}
+
+.teacher__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.teacher__classes {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.6rem;
+}
+
+.slot {
+  font-variant-numeric: tabular-nums;
+  background-color: #eef2ff;
+  color: #3730a3;
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.9rem;
+}
+
+.ineligible {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  background-color: #f9fafb;
+}
+
+.reason {
+  font-size: 0.85rem;
+  color: #92400e;
+  background-color: #fef3c7;
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+}
+
+.feedback--error {
+  border-color: #fca5a5;
+  background-color: #fef2f2;
+}
+
+.feedback--error h2 {
+  color: #b91c1c;
+}
+
+.feedback--error ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
