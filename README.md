@@ -72,7 +72,7 @@ dotnet test
 | `VITE_API_URL` | tela | `http://localhost:8080` | URL da API |
 | `CORS_ORIGEM` | API | `http://localhost:5173` | origem(ns) liberada(s), separadas por vírgula |
 | `PROFESSORES_ARQUIVO` | API | `Data/professores.json` | caminho do arquivo de professores |
-| `ASPNETCORE_URLS` | API | `http://+:8080` (Docker) | porta da API |
+| `ASPNETCORE_HTTP_PORTS` | API | `8080` (Docker) | porta da API |
 
 ---
 
