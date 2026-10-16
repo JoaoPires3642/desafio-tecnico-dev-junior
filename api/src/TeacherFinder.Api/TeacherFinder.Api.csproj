@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>TeacherFinder.Api</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TeacherFinder.Core\TeacherFinder.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!--
+      Fonte única de dados: o professores.json da raiz do repositório é copiado
+      para a saída como Data/professores.json. Nada de duplicar o arquivo.
+    -->
+    <Content Include="..\..\..\professores.json" Link="Data\professores.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

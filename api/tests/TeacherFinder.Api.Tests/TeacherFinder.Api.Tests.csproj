@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+    <RootNamespace>TeacherFinder.Api.Tests</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.*" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="xunit" Version="2.9.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\TeacherFinder.Api\TeacherFinder.Api.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- A API em memória (WebApplicationFactory) lê o mesmo professores.json. -->
+    <Content Include="..\..\..\professores.json" Link="Data\professores.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

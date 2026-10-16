@@ -1,0 +1,33 @@
+# === .NET ===
+bin/
+obj/
+*.user
+*.suo
+.vs/
+TestResults/
+*.trx
+*.coverage
+coverage*.xml
+
+# === Node / Vite ===
+node_modules/
+dist/
+dist-ssr/
+*.local
+.vite/
+
+# === Editores / SO ===
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
+
+# === Logs ===
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# === Docker / ambiente ===
+.env
+.env.local

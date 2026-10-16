@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Camada de domínio/negócio. Não depende de ASP.NET: contém o modelo,
+    o motor de busca e a validação. É o que os testes exercitam diretamente.
+  -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>TeacherFinder.Core</RootNamespace>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,12 @@
+# Contexto de build da API/raiz (docker compose usa a raiz como contexto).
+# O web tem o seu próprio .dockerignore em web/.
+
+**/bin
+**/obj
+**/node_modules
+**/dist
+**/.git
+**/.vs
+**/TestResults
+*.user
+.DS_Store

@@ -1,0 +1,44 @@
+# Sobe a solução inteira: API (.NET 8) e tela (React).
+#
+#   docker compose up --build            # api em :8080 e web em :5173
+#   docker compose --profile testes run --rm testes   # roda os testes em C#
+#
+# O contexto de build da API é a raiz do repositório porque o build precisa
+# de professores.json (fonte única de dados).
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+      target: final
+    container_name: encontra-professor-api
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      # Origem liberada no CORS (a tela rodando no host). Ajuste se mudar a porta da web.
+      - CORS_ORIGEM=http://localhost:5173
+
+  web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    container_name: encontra-professor-web
+    ports:
+      - "5173:5173"
+    environment:
+      # O navegador roda no host, então a URL é a porta publicada da API.
+      - VITE_API_URL=http://localhost:8080
+    depends_on:
+      - api
+
+  # Serviço só para testes. Fica atrás de um profile para não subir no `up`.
+  testes:
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+      target: testes
+    container_name: encontra-professor-testes
+    profiles:
+      - testes
