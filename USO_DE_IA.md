@@ -2,7 +2,7 @@
 
 ## Ferramenta
 
-Usei o **Verboo Code** (agente de linha de comando, baseado em um modelo da família Claude) como
+Usei o **Verboo Code** como
 par de programação dentro do próprio repositório: ele lia e escrevia arquivos, rodava `dotnet`,
 `npm` e `docker`, e propunha o próximo passo. Não usei IA no navegador, nem copiei solução de outro
 desafio.
