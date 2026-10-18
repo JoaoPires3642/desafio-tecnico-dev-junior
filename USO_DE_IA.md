@@ -2,8 +2,8 @@
 
 ## Ferramenta
 
-Usei o **Verboo Code** como
-par de programação dentro do próprio repositório: ele lia e escrevia arquivos, rodava `dotnet`,
+Usei o **Verboo Code**, com o modelo **DeepSeek 4.1 Flash** (esforço de raciocínio *low*), como par
+de programação dentro do próprio repositório: ele lia e escrevia arquivos, rodava `dotnet`,
 `npm` e `docker`, e propunha o próximo passo. Não usei IA no navegador, nem copiei solução de outro
 desafio.
 
